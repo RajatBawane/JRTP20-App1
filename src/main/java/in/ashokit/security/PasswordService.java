@@ -8,6 +8,8 @@ import java.util.Base64.Encoder;
 public class PasswordService {
 	
 	int i = 10;
+	int j =20;
+	int k = 30;
 
 	// logic for encode to string
 	public static String encode(String txt) {
