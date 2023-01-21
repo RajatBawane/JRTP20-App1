@@ -9,6 +9,11 @@ public class PasswordService {
 
 	// logic for encode to string
 	public static String encode(String txt) {
+		// bug fixing for Bug 101
+		
+		int a=12;
+		int b=14;
+		
 		Encoder encoder = Base64.getEncoder(); // base 64 is predifine class in java this statement give encoder object
 		return encoder.encodeToString(txt.getBytes()); // getBytes method user convert string value into byte value
 	}
