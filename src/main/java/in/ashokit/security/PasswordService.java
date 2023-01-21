@@ -14,6 +14,7 @@ public class PasswordService {
 	}
 
 	public static String decode(String encodetxt) {
+		String s = "Rajat";
 		Decoder decoder = Base64.getDecoder();
 		byte[] decode = decoder.decode(encodetxt);
 		return new String(decode); // convert byte array into string
